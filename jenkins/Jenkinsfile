@@ -3,6 +3,11 @@ pipeline
   agent {
     label 'linux'
   } 
+
+  tools {
+    maven 'mymaven'
+  }
+
   stages{
 
     stage('build')
